@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ.Formulário</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title-form">Ficha de Cadastro</h1>
+      </header>
+      <img src="../Ativ.Forms/logo_cotemig.png" alt="logo_cotemig" class="logo">
+      <main id="container">
+        <form action="#" method="post">
+          <fieldset>
+            <div class="box-data">
+              <label for="nome">Nome:</label>
+              <input type="text" name="nome" placeholder="Seu nome" id="nome">
+            </div>
+            <div class="box-data">
+              <label for="rg">RG:</label>
+              <input type="text" name="rg" placeholder="xxxxxxxx" id="rg">
+              <label for="cpf">CPF:</label>
+              <input type="text" name="cpf" placeholder="xxxxxxx-xx" id="cpf" >
+            </div>
+            <div class="box-data">
+              <label for="end">Endereço:</label>
+              <input type="text" name="end" placeholder="Rua , nº , Bairro" id="end">
+            </div>
+            <div class="box-data">
+                <label for="email">E-mail:</label>
+                <input type="text" placeholder="exemplo@email.com" name="email" id="email">
+              </div>
+              <div class="box-data">
+                <label for="tel">Telefone:</label>
+                <input type="text" placeholder="((xx) xxxxx-xxxx)" name="tel" id="tel">
+              </div>
+            <div class="box-data">
+              <label for="genero">Sexo:</label>
+              <select name="genero" id="genero">
+                <option value="" selected>Não informar</option>
+                <option value="m">Masculino</option>
+                <option value="f">Feminino</option>
+              </select>
+              <label for="dtNasc">Data Nascimento:</label>
+              <input type="text" name="dtNasc" placeholder="xx/xx/xxxx" id="dtNasc">
+            </div>
+            <div class="box-data">
+                <h4>Escolaridade:</h4>
+                <label for="fundamental">Fundamental</label>
+                <input type="radio" name="fundamental" id="fundamental">
+                <label for="medio">Ensino Médio</label>
+                <input type="radio" name="medio" id="medio">
+                <label for="incompleto">Superior incompleto</label>
+                <input type="radio" name="incompleto" id="incompleto">
+                <label for="completo">Superior completo</label>
+                <input type="radio" name="completo" id="completo">
+                <label for="mestrado">Mestrado</label>
+                <input type="radio" name="mestrado" id="mestrado">
+                <label for="doutorado">Doutorado</label>
+                <input type="radio" name="doutorado" id="doutorado">
+              </div>
+            <div class="box-data">
+              <h4>Situação Civil:</h4>
+              <label for="solteiro">Solteriro(a)</label>
+              <input type="radio" name="solteiro" id="solteiro">
+              <label for="casado">Casado(a)</label>
+              <input type="radio" name="casado" id="casado">
+              <label for="viuvo">Divorciado(a)</label>
+              <input type="radio" name="viuvo" id="viuvo">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Login</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                <label for="psw"><b>Senha</b></label>
+                <input type="password" placeholder="Enter Password" name="psw">
+        
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Me lembre
+                </label>
+              </div>
+          </fieldset>
+          <button type="save" class="button" onclick="validaCpf()">Enviar Dados</button> 
+          <button type="reset" class="button button4">Limpar Dados</button>
+        </form>
+      </main>
+      
+      <script src="js/main.js"></script>      
+</body>
+</html>
